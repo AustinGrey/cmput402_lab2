@@ -1,2 +1,2 @@
-# cmput402_lab2
-work for cmput 402 lab 2
+# cmput404_lab2
+work for cmput 404 lab 2
