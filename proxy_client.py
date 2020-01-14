@@ -4,7 +4,6 @@ HOST = 'localhost'
 PORT = 8001
 BUFFER_SIZE = 1024
 
-
 payload = 'GET / HTTP/1.0\r\nHost: www.google.com\r\n\r\n'
 
 def connect(addr):
@@ -22,7 +21,7 @@ def connect(addr):
         s.close()
 
 def main():
-    connect(('127.0.0.1', 8001))
+    connect((HOST, PORT))
 
 if __name__ == '__main__':
     main()
