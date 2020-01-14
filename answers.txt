@@ -1,0 +1,22 @@
+Question 1
+- You specify the TCP socket by opening a socket.SOCK_STREAM socket, which provides a stream (i.e. ordered) flow of data
+    which is why it is TCP. The exact code to specify a IPV4 TCP socket is socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+Question 2
+- The server socket binds and listens for incoming connections,
+    however the client socket connects and sends data, then listens for the response.
+    This means the server has to bind to a host name and set socket options so that the servers port stays constant,
+    otherwise it might change between connections like the client socket would.
+
+Question 3
+- Setting the socket option socket.SO_REUSEADDR to 1 allows us to reuse the port even if errors or failure
+    occur during operation of the server.
+
+Question 4
+- For incoming connection we get the IP address they are coming from, and which port they connected from.
+
+Question 5
+- After I have finished handling the incoming request, I attempted to receive more data and I get an empty byte array.
+
+Question 6
+- 
